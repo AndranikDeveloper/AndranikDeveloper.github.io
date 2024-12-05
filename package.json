@@ -1,9 +1,12 @@
 {
+  "homepage": "https://AndranikDeveloper.github.io/VUE-TASK/",
   "name": "vue-task",
   "version": "0.0.0",
   "private": true,
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
@@ -14,11 +17,11 @@
   },
   "dependencies": {
     "pinia": "^2.2.8",
-    "vee-validate": "^4.14.7",
     "vue": "^3.5.13",
     "vue-router": "^4.4.5"
   },
   "devDependencies": {
+    "gh-pages": "^6.2.0",
     "@tsconfig/node22": "^22.0.0",
     "@types/node": "^22.9.3",
     "@vitejs/plugin-vue": "^5.2.1",

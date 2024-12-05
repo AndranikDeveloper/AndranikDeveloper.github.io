@@ -1,7 +1,4 @@
-<script lang="ts" setup>
-// import { RouterLink } from 'vue-router'
-import NotesList from './views/NotesList.vue'
-</script>
+<script lang="ts" setup></script>
 
 <template>
   <div>
